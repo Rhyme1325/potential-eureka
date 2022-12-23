@@ -5,9 +5,9 @@ import random
 os.system('git pull')
 
 stack = [1, 7, 14, 28, 56]
-chosen = random.randint(0,4)
+chosen = stack[random.randint(0,4)]
 
-for i in range(stack[chosen]):
+for i in range(chosen):
     time = "\n" + date.today().strftime("%Y-%m-%d %H:%M:%S")
     # get current time
     f = open("dependencies/lineage.txt", "a")
@@ -15,7 +15,7 @@ for i in range(stack[chosen]):
     f.close()
 
     os.system('git add .')
-
-    os.system('git commit -m "script" ')
+    temp = 'git commit -m "' + str(chosen) + 'script"'
+    os.system(temp)
 
     os.system('git push')
