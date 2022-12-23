@@ -3,9 +3,10 @@ from datetime import date
 
 os.system('git pull')
 
+time = "\n" + date.today().strftime("%Y-%m-%d %H:%M:%S")
 # get current time
 f = open("dependencies/lineage.txt", "a")
-f.write(date.today().strftime("%Y-%m-%d %H:%M:%S"))
+f.write(time)
 f.write("\nNow the file has more content!")
 f.close()
 
