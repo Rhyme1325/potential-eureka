@@ -7,7 +7,6 @@ time = "\n" + date.today().strftime("%Y-%m-%d %H:%M:%S")
 # get current time
 f = open("dependencies/lineage.txt", "a")
 f.write(time)
-f.write("\nNow the file has more content!")
 f.close()
 
 os.system('git add .')
