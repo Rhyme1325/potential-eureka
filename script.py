@@ -15,7 +15,7 @@ for i in range(chosen):
     f.close()
 
     os.system('git add .')
-    temp = 'git commit -m "' + str(chosen) + 'script"'
+    temp = 'git commit -m "' + str(chosen) + 'x"'
     os.system(temp)
 
     os.system('git push')
