@@ -2,3 +2,4 @@ more
 logs
 another
 log
+and
