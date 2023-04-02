@@ -4,3 +4,4 @@ another
 log
 and
 more
+logs
